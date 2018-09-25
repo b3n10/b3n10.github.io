@@ -4,9 +4,9 @@
   "description": "",
   "main": "index.js",
   "scripts": {
-    "browserSync": "browser-sync start -s -f . --no-notify --host `hostname -I` --port 3000",
-    "createHTML": "node createPug.js",
-    "watch:pug": "onchange 'index.pug' -- npm run createHTML",
+    "browserSync": "browser-sync start -s -f ./*.html --https --no-notify --host `hostname -I` --port 3000",
+    "createHTML": "node createHTML.js",
+    "watch:pug": "onchange '**/*.pug' -- npm run createHTML",
     "watch:all": "parallelshell 'npm run browserSync' 'npm run watch:pug'"
   },
   "repository": {

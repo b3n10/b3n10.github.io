@@ -4,7 +4,21 @@ const fs = require('fs')
 const main_constants = {
 	pageTitle: 'b3n10',
 	navLinks: [
-		'home', 'about', 'contact'
+		'about', 'contact'
+	],
+	projects: [
+		{
+			title:	'Random Quotes',
+			link:		'https://randomquotes2018.herokuapp.com',
+			desc:		'Encourage people with inspirational phrases and quotes',
+			tech:		'PHP, AJAX'
+		},
+		{
+			title:	'Tic Tac Toe',
+			link:		'http://b3n10.github.io/tictactoe-in-vuejs/',
+			desc:		'Classical casual game',
+			tech:		'VueJS'
+		}
 	]
 }
 

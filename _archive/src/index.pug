@@ -1,0 +1,46 @@
+extends includes/layout.pug
+
+block page_title
+	title #{pageTitle} - home
+
+block content
+	h1 b3n10
+
+	p welcome to my page powered by github
+
+	section.portfolio
+		h3.portfolio__heading
+			a(href='#') lists of projects i've made so far
+		ul
+			each project in projects
+				li
+					a(href=project.link) #{project.title}
+					p #{project.desc}
+					p main technologies used: #{project.tech}
+
+	section.skillset
+		h3.skillset__heading
+			a(href='#') technologies i'm using on my projects
+		h4 web development
+		ul
+			li php
+			li js
+			li html
+			li css
+		h4 tools and framework
+		ul
+			li linux
+			li nodejs
+			li laravel
+			li vuejs
+			li npm
+			li composer
+		h4 templating engine
+		ul
+			li pug
+			li blade
+			li twig
+		h4 databases
+		ul
+			li mysql
+			li postgres

@@ -1,0 +1,7 @@
+nav
+	ul
+		li
+			a(href='/') home
+		each link in navLinks
+			li
+				a(href=link + '.html') #{link}
